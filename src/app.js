@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 const pastesRouter = require("./pastes/pastes.router");
-// TODO: Follow instructions in the checkpoint to implement ths API.
+
 
 const pastes = require("./data/pastes-data");
 
