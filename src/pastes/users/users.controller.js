@@ -17,6 +17,13 @@ function userExists(req, res, next) {
   ))
 }
 
-function read() {
+function read(req, res, next) {
+  res.json({data: res.locals.user})
+}
+
+
+module.exports = {
+  list,
+  read: [userExists, read],
   
 }

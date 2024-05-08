@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 
 const pastesRouter = require("./pastes/pastes.router");
+const usersRouter = require('./users/users.router')
 
 
 const pastes = require("./data/pastes-data");
@@ -14,7 +15,7 @@ app.use(express.json())
 
 ///pastes router
 app.use("/pastes", pastesRouter);
-
+app.use("/users", usersRouter)
 
 
 // Not found handler
